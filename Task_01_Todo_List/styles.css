@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Resetting the document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background: linear-gradient(90deg, rgb(55, 255, 155) 0%,
+                                     rgb(84, 215, 255) 50%, 
+                                     rgb(104, 77, 255) 100%);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid rgb(68, 68, 68);
+}
+
+
+h1 {
+  font-family: 'kalam';
+  letter-spacing: 2px;
+  margin-bottom: 15px;;
+  font-weight: bold;
+}
+
+input {
+  width: 75%;
+  margin-right: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-family: 'kalam';
+}
+
+.addBtn {
+  width: 29%;
+  padding: 9px;
+  margin-left:0;
+  background: #ffffff;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'kalam';
+  font-weight: bold;
+}
+
+.addBtn:hover {
+  background-color: rgb(186, 255, 108);
+  color: rgb(0, 0, 0);
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  color: rgb(0, 0, 0);
+  background: rgb(235, 213, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.2s;
+  font-family: 'kalam';
+
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: 120deg, #fdfbfb 0%, #ebedee 100%;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: rgb(255, 163, 163);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+ background: rgb(235, 213, 255);
+  color: rgb(5, 5, 5);
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: rgb(84, 48, 247);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the trash button */
+.far {
+
+  background-color: rgb(71, 255, 117);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 16px 16px 16px;
+  border-radius: 50%;
+}
+
+.far:hover {
+  background-color: tomato;
+  color: white;
+}
+
+
+
+
+
