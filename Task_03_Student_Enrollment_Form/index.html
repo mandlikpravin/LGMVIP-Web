@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Enrollment Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+      
+        <!-- Code to get multiple students details and display them in a table -->
+        <div id="container">
+           
+            <div id="nameDiv" class="input"><h1> Student Enrollment Form </h1 ></div>
+            <div id="nameDiv" class="input">Name: <input id="name" type="text" placeholder="Enter Full Name"/> </div>
+            <div  class="input">Email: <input id="email" type="text" placeholder="Enter Email Id"/> </div>
+            <div  class="input">Mobile No: <input id="mobile" type="text" placeholder="Enter Mobile Number"/> </div>
+            <div  class="input">SSC Percentage:  <input id="ssc" type="text" placeholder="Enter SSC Percentage"/> </div>
+            <div  class="input">HSC Percentage:  <input id="hsc" type="text" placeholder="Enter HSC Percentage"/> </div>
+            <div  class="input">Gender:     <input id="gender2" type="radio" name="gender" value="Female"> Female</input>
+                <input id="gender1" type="radio" name="gender" value="Male"> Male</input>
+            </div>  
+            <div  class="input">Skills:  <input id="check1" type="checkbox" name="check" value="HTML"> 
+                <label for="check1"> HTML </label>
+            
+                <input id="check2" type="checkbox" name="check" value="CSS"> 
+                <label for="check2"> CSS </label>
+
+                <input id="check3" type="checkbox" name="check" value="Js"> 
+                <label for="check3"> Js </label>
+
+            </div>            
+
+            <button id="entry">Add Enrollment</button>
+
+        </div>
+
+        <table id="display">
+            <tr>
+
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile Number</th>'
+                <th>SSC Percentage</th>
+                <th>HSC Percentage</th>
+                <th>Gender</th>
+                <th>Skills</th>
+                             
+            </tr>
+        </table>
+        
+        <script src="script.js"> </script>
+
+    </body>
+
+</html>
