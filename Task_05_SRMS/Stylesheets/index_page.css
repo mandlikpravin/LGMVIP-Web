@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background: radial-gradient(rgb(81, 203, 252), rgb(81, 203, 252), rgb(76, 0, 255));
+     /* #0d0d0d; */
+    /* color: white; */
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+    margin-left:10px;
+}
+.title{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 10px;
+}
+.main{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+}
+.faculty-login,.result{
+    padding: 20px;
+}
+input,select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    display: rgb(0, 0, 0);
+}
+input[type=text],input[type=password],select{
+    background-color: #e4e4e4 ;
+    /* #474b4f; */
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2em;
+}
+input[type=submit]{
+    background-color: #d6ff94;
+    color: rgb(0, 0, 0);
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+input[type=submit]:hover{
+    background-color: 	#00fda9;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+fieldset{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+@media only screen and (max-width: 768px) {
+    .main{
+        display: grid;
+        grid-template-rows: 80vh;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .main{
+        grid-template-rows: 60vh;
+    }
+  }
+  @media only screen and (max-width: 628px) {
+    .title{
+        font-size: 2em;
+        font-family: 'Roboto', sans-serif;
+    }
+    .main{
+        grid-template-rows: 60vh;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .title{
+        font-size: 1.7em;
+        font-family: 'Roboto', sans-serif;
+    }
+    .main{
+        grid-template-rows: 55vh;
+    }
+  }
